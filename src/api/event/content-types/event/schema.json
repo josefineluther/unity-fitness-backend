@@ -51,6 +51,12 @@
       "relation": "manyToOne",
       "target": "api::studio.studio",
       "inversedBy": "events"
+    },
+    "spots": {
+      "type": "integer"
+    },
+    "minutes": {
+      "type": "integer"
     }
   }
 }
