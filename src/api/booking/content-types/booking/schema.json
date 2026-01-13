@@ -22,6 +22,9 @@
     },
     "customer_email": {
       "type": "string"
+    },
+    "booking_reference": {
+      "type": "uid"
     }
   }
 }
