@@ -63,6 +63,20 @@
       "relation": "oneToMany",
       "target": "api::booking.booking",
       "mappedBy": "event"
+    },
+    "recurrence_weekday": {
+      "type": "integer",
+      "min": 0,
+      "max": 6
+    },
+    "recurrence_interval": {
+      "type": "integer"
+    },
+    "recurrence_end_date": {
+      "type": "date"
+    },
+    "recurrence_time": {
+      "type": "time"
     }
   }
 }
