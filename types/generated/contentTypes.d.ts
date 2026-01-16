@@ -697,14 +697,17 @@ export interface ApiEventEvent extends Struct.CollectionTypeSchema {
     recurrence_end_date: Schema.Attribute.Date;
     recurrence_interval: Schema.Attribute.Integer;
     recurrence_time: Schema.Attribute.Time;
-    recurrence_weekday: Schema.Attribute.Integer &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 6;
-          min: 0;
-        },
-        number
-      >;
+    recurrence_weekday: Schema.Attribute.Enumeration<
+      [
+        'monday',
+        'tuesday',
+        'wednesday',
+        'thursday',
+        'friday',
+        'saturday',
+        'sunday',
+      ]
+    >;
     slug: Schema.Attribute.UID<'title'>;
     spots: Schema.Attribute.Integer;
     studio: Schema.Attribute.Relation<'manyToOne', 'api::studio.studio'>;

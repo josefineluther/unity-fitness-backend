@@ -64,11 +64,6 @@
       "target": "api::booking.booking",
       "mappedBy": "event"
     },
-    "recurrence_weekday": {
-      "type": "integer",
-      "min": 0,
-      "max": 6
-    },
     "recurrence_interval": {
       "type": "integer"
     },
@@ -77,6 +72,18 @@
     },
     "recurrence_time": {
       "type": "time"
+    },
+    "recurrence_weekday": {
+      "type": "enumeration",
+      "enum": [
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday",
+        "sunday"
+      ]
     }
   }
 }
