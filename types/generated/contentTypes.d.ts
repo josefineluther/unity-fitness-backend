@@ -585,6 +585,7 @@ export interface ApiBookingBooking extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     customer_email: Schema.Attribute.String;
     customer_name: Schema.Attribute.String;
+    datetime: Schema.Attribute.DateTime;
     event: Schema.Attribute.Relation<'manyToOne', 'api::event.event'>;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<

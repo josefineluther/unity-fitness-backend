@@ -25,6 +25,9 @@
     },
     "booking_reference": {
       "type": "uid"
+    },
+    "datetime": {
+      "type": "datetime"
     }
   }
 }
